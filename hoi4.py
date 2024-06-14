@@ -389,10 +389,10 @@ elif menu == "사단 승률 예측":
 elif menu == "두 사단의 전투 결과 예측":
 
     st.header("전투 샘플 데이터 업로드")
-    sample_data = st.file_uploader("CSV 파일을 업로드", type="csv")
+    sample_data = 1
 
     if sample_data is not None:
-        combat = pd.read_csv(sample_data)
+        combat = pd.read_csv('combat.csv')
         combat.drop(columns=['Infantry', 'Artillery', 'Anti-Air', 'Anti-Tank', 'Opp-IN', 'Opp-AR', 'Opp-AA', 'Opp-AT'], inplace=True)
 
         MAX_HP = 0
