@@ -379,7 +379,7 @@ elif menu == "사단 승률 예측":
 
         if st.button("승률 예측"):
             if feature1+feature2+feature3+feature4:
-                st.write(f"전체 승리 확률: {(test_result.count(1)+test_result.count(2))*100/len(test_result)}%")
+                st.markdown(f"전체 승리 확률: **{(test_result.count(1)+test_result.count(2))*100/len(test_result)}%**")
                 st.write(f"공격 상황 승리 확률: {test_result.count(1)*100/(test_result.count(1)+test_result.count(0))}%")
                 st.write(f"방어 상황 승리 확률: {test_result.count(2)*100/(test_result.count(2)+test_result.count(3))}%")
             else:
@@ -626,9 +626,9 @@ elif menu == "두 사단의 전투 결과 예측":
                 predictions = model.predict(test_data)
 
                 if predictions[0] == 'G':
-                    st.write('첫 번째 사단이 방어 실패, 두 번째 사단이 공격 성공')
+                    st.markdown('**첫 번째 사단이 방어 :red[실패], 두 번째 사단이 공격 :green[성공]**')
                 else:
-                    st.write('첫 번째 사단이 방어 성공, 두 번째 사단이 공격 실패')
+                    st.markdown('**첫 번째 사단이 방어 :green[성공], 두 번째 사단이 공격 :red[실패]**')
 
             else:
                 st.markdown('**:red[ERROR: 사단의 편제를 입력하세요.]**')
