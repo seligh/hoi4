@@ -129,7 +129,7 @@ elif menu == "지형 CSV 파일 업로드 및 분석":
 
 elif menu == "사단 승률 예측":
 
-    st.header("전투 샘플 데이터 업로드")
+    # st.header("전투 샘플 데이터 업로드")
     sample_data = 1
 
     if sample_data is not None:
@@ -388,7 +388,7 @@ elif menu == "사단 승률 예측":
             
 elif menu == "두 사단의 전투 결과 예측":
 
-    st.header("전투 샘플 데이터 업로드")
+    # st.header("전투 샘플 데이터 업로드")
     sample_data = 1
 
     if sample_data is not None:
