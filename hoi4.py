@@ -512,7 +512,7 @@ elif menu == "두 사단의 전투 결과 예측":
 
         # 모델 평가
         accuracy = accuracy_score(y_test, y_pred)
-        st.write(f"머신러닝 정확도: {accuracy}")
+        st.write(f"[머신러닝 정확도: {accuracy}]")
 
         st.header("두 사단의 전투 결과 예측")
         
