@@ -379,7 +379,7 @@ elif menu == "사단 승률 예측":
 
         if st.button("승률 예측"):
             if feature1+feature2+feature3+feature4:
-                st.markdown(f"전체 승리 확률: **{(test_result.count(1)+test_result.count(2))*100/len(test_result)}%**")
+                st.markdown(f"**전체 승리 확률: {(test_result.count(1)+test_result.count(2))*100/len(test_result)}%**")
                 st.write(f"공격 상황 승리 확률: {test_result.count(1)*100/(test_result.count(1)+test_result.count(0))}%")
                 st.write(f"방어 상황 승리 확률: {test_result.count(2)*100/(test_result.count(2)+test_result.count(3))}%")
             else:
