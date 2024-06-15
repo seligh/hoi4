@@ -256,7 +256,7 @@ elif menu == "사단 승률 예측":
         st.write(f"[머신러닝 정확도: {accuracy}]")
 
         con = st.container(border=True)
-        con.header("군대 승률 예측")
+        con.header("사단 승률 예측")
         
         con.write("사단의 편제를 입력")
         feature1 = con.number_input("Infantry", min_value=0, max_value=25, step=1)
