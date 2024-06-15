@@ -517,7 +517,7 @@ elif menu == "두 사단의 전투 결과 예측":
         st.header("두 사단의 전투 결과 예측")
         
         concon = st.container(border=True)
-        concon.write("첫 번째 사단의 편제를 입력 (공격자)")
+        concon.write("첫 번째 사단의 편제를 입력")
         feature1_1 = concon.number_input("Infantry", min_value=0, max_value=25, step=1)
         feature1_2 = concon.number_input("Artillery", min_value=0, max_value=25, step=1)
         feature1_3 = concon.number_input("Anti-Air", min_value=0, max_value=25, step=1)
@@ -531,7 +531,7 @@ elif menu == "두 사단의 전투 결과 예측":
         
         
         conc = st.container(border=True)
-        conc.write("두 번째 사단의 편제를 입력 (방어자)")
+        conc.write("두 번째 사단의 편제를 입력")
         feature2_1 = conc.number_input("Infantry ", min_value=0, max_value=25, step=1)
         feature2_2 = conc.number_input("Artillery ", min_value=0, max_value=25, step=1)
         feature2_3 = conc.number_input("Anti-Air ", min_value=0, max_value=25, step=1)
